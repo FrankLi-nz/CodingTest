@@ -1,10 +1,7 @@
-# CodingTest
-This repository is just for coding test
+#ifndef CALCULATE_BUS_CAPACITY_H
+#define CALCULATE_BUS_CAPACITY_H
 
-/**********************************************************************
- *              CalculateBusCapacity.h
- *              CalculateBusCapacity.cpp
- **********************************************************************/
+#include <vector>
 
 /*
  * function: calculating the capacity of a bus
@@ -14,3 +11,5 @@ This repository is just for coding test
  *             passengers[i].second = the number of entering passengers at i-th stop
  */
 int CalculateBusCapacity(std::vector< std::pair <int, int> > passengers);
+
+#endif // CALCULATEBUSCAPACITY_H
