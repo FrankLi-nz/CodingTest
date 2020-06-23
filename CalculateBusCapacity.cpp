@@ -26,6 +26,10 @@ int CalculateBusCapacity(vector< pair <int, int> > passengers)
     {
         /* first exit then enter */
         i32current -= passengers[i].first;
+
+        /* The number of people on the bus cannot be less than zero */
+        if (i32current < 0) i32current = 0;
+
         i32current += passengers[i].second;
 
         /* check the capacity of the bus */
