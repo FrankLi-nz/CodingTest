@@ -24,11 +24,11 @@ int CalculateBusCapacity(vector< pair <int, int> > passengers)
     /* check the number of passengers at every stop */
     for (int i = 0; i < i32size; i ++)
     {
-        // first exit then enter
+        /* first exit then enter */
         i32current -= passengers[i].first;
         i32current += passengers[i].second;
 
-        // check the capacity of the bus
+        /* check the capacity of the bus */
         if (i32current > i32capacity) i32capacity = i32current;
     }
 
