@@ -30,7 +30,11 @@ int CalculateBusCapacity(vector< pair <int, int> > passengers)
         /* The number of people on the bus cannot be less than zero */
         if (i32current < 0) i32current = 0;
 
-        i32current += passengers[i].second;
+        /* No passenger entering in at the last stop */
+        if (i < (i32size - 1))
+        {
+            i32current += passengers[i].second;
+        }
 
         /* check the capacity of the bus */
         if (i32current > i32capacity) i32capacity = i32current;
